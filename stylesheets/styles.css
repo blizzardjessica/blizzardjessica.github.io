@@ -97,6 +97,19 @@ header p.view a {
 header p.view small {
   font-weight: 400;
 }
+
+header myul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    right: 200px;
+    top: 20px;
+    height: 38px;
+    padding: 1px 0;
+}
+
 header ul {
   margin: 0;
   padding: 0;
@@ -104,8 +117,8 @@ header ul {
   position: absolute;
   z-index: 1;
   right: 20px;
-  top: 20px;
-  height: 38px;
+  top: 23px;
+  height: 28px;
   padding: 1px 0;
   background: #5198DF;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #77b9fb), color-stop(100%, #3782cd));
