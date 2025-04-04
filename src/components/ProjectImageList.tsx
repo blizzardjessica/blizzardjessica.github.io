@@ -16,7 +16,7 @@ export interface ProjectImageListProps {
 export default function ProjectImageList({itemData, rowHeight, width}: ProjectImageListProps) {
 
     return (
-        <ImageList sx={{ width, height: 450 }} cols={1} rowHeight={rowHeight}>
+        <ImageList sx={{ width, height: 400, margin: "auto" }} cols={1} rowHeight={rowHeight}>
             {itemData.map((item) => (
                 <ImageListItem key={item.img.src}>
                     <img

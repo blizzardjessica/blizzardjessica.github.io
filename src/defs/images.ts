@@ -1,5 +1,14 @@
 import {ImageItem} from "@/src/components/ProjectImageList";
 
+import VMapImage1 from "@/public/images/vmap_ecg_selection.png";
+import VMapImage2 from "@/public/images/vmap_result.png";
+import VMapImage3 from "@/public/images/vmap_result2.png";
+
+import CSImage1 from "@/public/images/crimespreemenu.jpg";
+import CSImage2 from "@/public/images/crimespreeplayer.jpg";
+import CSImage3 from "@/public/images/crimespreebusted.jpg";
+import CSImage4 from "@/public/images/crimespree_upgrade.jpg";
+
 import RPImage1 from "@/public/images/relaxation_portal_message.jpg";
 import RPImage2 from "@/public/images/relaxation_portal_transition.jpg";
 import RPImage3 from "@/public/images/relaxation_portal_history.jpg";
@@ -18,6 +27,41 @@ import MMImage5 from "@/public/images/myth_match_constellations.png";
 import MMImage6 from "@/public/images/myth_match_blessings.png";
 import MMImage7 from "@/public/images/myth_match_message.jpg";
 import MMImage8 from "@/public/images/myth_match_gameplay.png";
+
+
+export const vmapImages: ImageItem[] = [
+    {
+        img: VMapImage1,
+        title: 'vMap ECG Selection',
+    },
+    {
+        img: VMapImage2,
+        title: 'vMap Mapping Result 1',
+    },
+    {
+        img: VMapImage3,
+        title: 'vMap Mapping Result 2',
+    },
+];
+
+export const csImages: ImageItem[] = [
+    {
+        img: CSImage1,
+        title: 'Crime Spree Main Menu',
+    },
+    {
+        img: CSImage2,
+        title: 'Crime Spree Gameplay',
+    },
+    {
+        img: CSImage3,
+        title: 'Crime Spree Gameplay Busted',
+    },
+    {
+        img: CSImage4,
+        title: 'Crime Spree Upgrade',
+    },
+];
 
 export const rpImages: ImageItem[] = [
     {

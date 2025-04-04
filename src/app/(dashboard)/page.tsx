@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Card, CardContent, CardHeader, IconButton} from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from "next/link";
+import Typography from "@mui/material/Typography";
 
 export default function HomePage() {
     return (
@@ -25,7 +26,8 @@ export default function HomePage() {
                             aria-label="Software Engineer"
                             href="https://www.linkedin.com/in/jessica-blizzard"
                             target="_blank">
-                            Jessica Blizzard - Software Engineer<LinkedInIcon color="primary" fontSize="large"/>
+                            <Typography sx={{}} variant="h5" flexWrap="wrap" >Jessica Blizzard - Software Engineer</Typography>
+                            <LinkedInIcon color="primary" fontSize="large"/>
                         </IconButton>
                     }
                 />

@@ -1,12 +1,13 @@
 import * as React from 'react';
+import type {Branding, Navigation} from '@toolpad/core/AppProvider';
 import { NextAppProvider } from '@toolpad/core/nextjs';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import Inventory2Icon from '@mui/icons-material/Inventory2';
 import DescriptionIcon from '@mui/icons-material/Description';
 import HomeIcon from '@mui/icons-material/Home';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import GamesIcon from '@mui/icons-material/SportsEsports';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import type {Branding, Navigation} from '@toolpad/core/AppProvider';
 import LinearProgress from '@mui/material/LinearProgress';
 import theme from "@/theme";
 
@@ -27,9 +28,21 @@ const NAVIGATION: Navigation = [
     icon: <DescriptionIcon />,
   },
   {
-    segment: 'games',
-    title: 'Games',
-    icon: <GamesIcon />,
+    segment: 'projects',
+    title: 'Projects',
+    icon: <Inventory2Icon />,
+    children: [
+      {
+        segment: 'samd',
+        title: 'Software as a Medical Device',
+        icon: <MonitorHeartIcon />,
+      },
+      {
+        segment: 'games',
+        title: 'Games',
+        icon: <GamesIcon />,
+      },
+    ],
   },
 ];
 
